@@ -1,4 +1,4 @@
-// File: C:\Users\JAY\Documents\AURA (MT5 Trading)\AURA_MT5 RL Trading\frontend\app\layout.tsx
+// File: C:\Users\JAY\Documents\AURA (MT5 Trading)\AURA_10.4\frontend\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

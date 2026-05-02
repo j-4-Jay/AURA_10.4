@@ -3,54 +3,57 @@ import time
 import requests
 import numpy as np
 from stable_baselines3 import PPO
-import feedparser
 import sys
+from colorama import init, Fore, Style
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
 
-# sys.path.append(...)  # Keep your sys.path if you need it
-# from agents.sentiment_ollama_agent import SentimentOllamaAgent
+init(autoreset=True)
 
+# [AURA-STRICT-PROTOCOL] Phase 7 - Live Trading Engine
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_DIR = os.path.join(BASE_DIR, "rl", "models")
 FASTAPI_URL = "http://127.0.0.1:8000/api/v1/"
 
 class AuraLiveInference:
-    def __init__(self, symbol="EURUSDm", model_version="v2"):
+    def __init__(self, symbol="EURUSDm", model_version="v1"):
         self.symbol = symbol
         self.window_size = 60
         self.tick_buffer = [] 
         
-        model_path = os.path.join(MODEL_DIR, f"{self.symbol}_MasterPPO_{model_version}.zip")
+        print(f"{Fore.CYAN}[AURA BRAIN] Initializing Neural Cortex for {self.symbol}...{Style.RESET_ALL}")
+        
+        # Load the trained weights
+        model_path = os.path.join(MODEL_DIR, f"{self.symbol}_Master_PPO_{model_version}.zip")
         if not os.path.exists(model_path):
-            print(f"[WARNING] Model not found at {model_path}. Using placeholder weights.")
-            # self.model = PPO.load(model_path, device="cpu")
+            print(f"{Fore.YELLOW}[WARNING] Neural weights not found at {model_path}.{Style.RESET_ALL}")
+            print(f"{Fore.YELLOW}[WARNING] AI will generate RANDOM actions for testing!{Style.RESET_ALL}")
+            self.model = None
         else:
-            print(f"[AURA] Loading Neural Weights from {os.path.basename(model_path)}")
+            print(f"{Fore.GREEN}[OK] Loaded Neural Weights: {os.path.basename(model_path)}{Style.RESET_ALL}")
             self.model = PPO.load(model_path, device="cpu")
             
-        # self.sentiment_agent = SentimentOllamaAgent(model_name="llama3")
         self.current_position = 0 
         self.floating_pnl_pct = 0.0
 
     def fetch_live_market_state(self):
         """Poll the FastAPI backend for the latest payload sent by MT5."""
         try:
-            # We assume your FastAPI has an endpoint that stores the latest MT5 JSON
-            res = requests.get(f"{FASTAPI_URL}status/{self.symbol}")
+            res = requests.get(f"{FASTAPI_URL}status/{self.symbol}", timeout=2)
             if res.status_code == 200:
-                return res.json() # Returns the full MT5 payload
+                return res.json()
             return None
-        except Exception as e:
-            print(f"[!] Backend disconnected: {e}")
+        except requests.exceptions.ConnectionError:
+            print(f"{Fore.RED}[!] Backend offline. Waiting for Boot Commander...{Style.RESET_ALL}")
+            return None
+        except Exception:
             return None
 
     def build_observation_matrix(self, mt5_json):
-        """
-        Reconstructs the EXACT 264-feature array the model expects:
-        60 candles * 4 + 2 state features + 8 radar features + 14 strategy votes
-        """
+        """Reconstructs the 264-feature array for the Neural Network"""
         current_price = mt5_json.get('bid', 0.0)
         
-        # 1. Manage the OHLC Buffer
+        # 1. Manage the OHLC Buffer (Simulated from ticks)
         if len(self.tick_buffer) == 0:
             self.tick_buffer = [current_price] * self.window_size
         else:
@@ -84,7 +87,7 @@ class AuraLiveInference:
         votes_data = mt5_json.get('strategy_votes', [0]*14)
         votes_arr = np.array(votes_data, dtype=np.float32)
         
-        # 5. Glue together in exact order: [OHLC, State, Radar, Votes]
+        # 5. Glue together
         return np.concatenate([obs_window, state, radar_arr, votes_arr])
 
     def dispatch_signal(self, action_int):
@@ -96,43 +99,46 @@ class AuraLiveInference:
             
         if command != "NONE":
             try:
-                res = requests.post(f"{FASTAPI_URL}rl_signal?symbol={self.symbol}&action={command}")
+                res = requests.post(f"{FASTAPI_URL}rl_signal?symbol={self.symbol}&action={command}", timeout=2)
                 if res.status_code == 200:
-                    print(f"[AURA EXECUTION] - Dispatched command: {command}")
+                    color = Fore.GREEN if command == "BUY" else Fore.RED if command == "SELL" else Fore.YELLOW
+                    print(f"{color}[AURA EXECUTION] Dispatched: {command} on {self.symbol}{Style.RESET_ALL}")
                     if command == "BUY": self.current_position = 1
                     elif command == "SELL": self.current_position = -1
                     elif command == "CLOSE": self.current_position = 0
             except Exception as e:
-                print(f"[!] Failed to dispatch signal: {e}")
+                print(f"{Fore.RED}[!] Failed to dispatch signal to Backend: {e}{Style.RESET_ALL}")
 
     def run_dress_rehearsal(self):
-        print(f"[AURA] Initiating Live Inference for {self.symbol}...")
+        print(f"{Fore.MAGENTA}[*] AI Engine engaged. Waiting for MT5 ticks...{Style.RESET_ALL}")
         try:
             while True:
-                # 1. Ask FastAPI for the latest Radar Data from MT5
+                # 1. Ask FastAPI for the latest MT5 Data
                 mt5_data = self.fetch_live_market_state()
                 
                 if mt5_data:
-                    # 2. Build the Massive Matrix
+                    # 2. Build Matrix
                     obs = self.build_observation_matrix(mt5_data)
                     
-                    # 3. Ask the AI Captain
-                    if hasattr(self, 'model'):
-                        action, _states = self.model.predict(obs, deterministic=True)
+                    # 3. Ask AI
+                    if self.model:
+                        action, _ = self.model.predict(obs, deterministic=True)
                         action_int = int(action)
                     else:
-                        action_int = 0 # Fallback if model didn't load
+                        # Fallback for testing if model missing
+                        action_int = np.random.choice([0, 1, 2])
                         
-                    if action_int != 0:
-                        print("Technical signal triggered.")
-                        # Add your Sentiment override logic back here if needed!
-                        self.dispatch_signal(action_int)
-                        
-                time.sleep(1) # Poll every 1 second
+                    # 4. Send command
+                    self.dispatch_signal(action_int)
+                    
+                # Sleep briefly to avoid flooding CPU. The AI reacts roughly once per second.
+                time.sleep(1.0)
                 
         except KeyboardInterrupt:
-            print("\n[AURA] Inference Terminated.")
+            print(f"\n{Fore.MAGENTA}[AURA BRAIN] Engine disengaged. Sleeping.{Style.RESET_ALL}")
 
 if __name__ == "__main__":
-    engine = AuraLiveInference(symbol="EURUSDm", model_version="v2")
-    engine.run_dress_rehearsal()
+    # For Phase 7, we test EURUSDm by default.
+    # Note: Ensure the model filename matches what is in your rl/models/ folder!
+    brain = AuraLiveInference(symbol="EURUSDm", model_version="v1")
+    brain.run_dress_rehearsal()
