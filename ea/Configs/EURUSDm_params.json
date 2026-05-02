@@ -1,0 +1,24 @@
+{
+    "symbol": "EURUSDm",
+    "profit_factor_tested": 32.0,
+    "circuit_breaker": {
+        "global_max_drawdown_pct": 5.0
+    },
+    "indicators": {
+        "Optuna_EMAPeriod": 185,
+        "Optuna_SL_Multiplier": 0.68,
+        "Optuna_TP_Multiplier": 4.1
+    },
+    "strategies": {
+        "1_FashionablyLateScalp": false,
+        "2_TheMagnet_VWAP": false,
+        "3_WhaleFootprint_FVG": true,
+        "4_TheCoil_Squeeze": false,
+        "5_RubberBandSnap": true,
+        "6_ShadowThief": true,
+        "7_SparkPlug": false
+    },
+    "trailing_management": {
+        "trailing_type": "1_Breakeven"
+    }
+}

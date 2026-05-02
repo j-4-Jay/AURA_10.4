@@ -1,0 +1,25 @@
+{
+    "symbol": "XAGUSDm",
+    "timeframe_optimized": "Daily",
+    "profit_factor_tested": 12.26,
+    "circuit_breaker": {
+        "global_max_drawdown_pct": 5.0
+    },
+    "indicators": {
+        "Optuna_EMA_Period": 165,
+        "Optuna_SL_Multiplier": 0.1,
+        "Optuna_TP_Multiplier": 4.32
+    },
+    "strategies": {
+        "strat_1": false,
+        "strat_2": false,
+        "strat_3": false,
+        "strat_4": true,
+        "strat_5": true,
+        "strat_6": true,
+        "strat_7": true
+    },
+    "trailing_management": {
+        "trailing_type": 1
+    }
+}

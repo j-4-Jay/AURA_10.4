@@ -1,0 +1,25 @@
+{
+    "symbol": "EURUSDm",
+    "timeframe_optimized": "Daily",
+    "profit_factor_tested": 8.54,
+    "circuit_breaker": {
+        "global_max_drawdown_pct": 5.0
+    },
+    "indicators": {
+        "Optuna_EMA_Period": 138,
+        "Optuna_SL_Multiplier": 0.1,
+        "Optuna_TP_Multiplier": 5.0
+    },
+    "strategies": {
+        "strat_1": true,
+        "strat_2": true,
+        "strat_3": false,
+        "strat_4": false,
+        "strat_5": true,
+        "strat_6": true,
+        "strat_7": false
+    },
+    "trailing_management": {
+        "trailing_type": 2
+    }
+}

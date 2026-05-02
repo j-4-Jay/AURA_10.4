@@ -1,0 +1,11 @@
+{
+    "symbol": "GBPJPYm",
+    "best_reward": 0.0,
+    "ppo_hyperparameters": {
+        "n_steps": 128,
+        "batch_size": 128,
+        "learning_rate": 0.00011112426424692224,
+        "ent_coef": 0.013141317313845264,
+        "gamma": 0.99
+    }
+}

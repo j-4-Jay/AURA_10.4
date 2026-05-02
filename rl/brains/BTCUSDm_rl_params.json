@@ -1,0 +1,11 @@
+{
+    "symbol": "BTCUSDm",
+    "best_reward": 0.0,
+    "ppo_hyperparameters": {
+        "n_steps": 256,
+        "batch_size": 32,
+        "learning_rate": 5.745409335145323e-05,
+        "ent_coef": 0.015426701303567011,
+        "gamma": 0.995
+    }
+}

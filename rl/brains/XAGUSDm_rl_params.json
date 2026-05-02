@@ -1,0 +1,11 @@
+{
+    "symbol": "XAGUSDm",
+    "best_reward": 662414.7424316406,
+    "ppo_hyperparameters": {
+        "n_steps": 512,
+        "batch_size": 64,
+        "learning_rate": 2.4715963320290324e-05,
+        "ent_coef": 0.002761277463033968,
+        "gamma": 0.995
+    }
+}

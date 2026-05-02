@@ -1,0 +1,25 @@
+{
+    "symbol": "GBPJPYm",
+    "timeframe_optimized": "Daily",
+    "profit_factor_tested": 8.11,
+    "circuit_breaker": {
+        "global_max_drawdown_pct": 5.0
+    },
+    "indicators": {
+        "Optuna_EMA_Period": 74,
+        "Optuna_SL_Multiplier": 0.1,
+        "Optuna_TP_Multiplier": 4.96
+    },
+    "strategies": {
+        "strat_1": false,
+        "strat_2": false,
+        "strat_3": false,
+        "strat_4": false,
+        "strat_5": true,
+        "strat_6": false,
+        "strat_7": true
+    },
+    "trailing_management": {
+        "trailing_type": 1
+    }
+}

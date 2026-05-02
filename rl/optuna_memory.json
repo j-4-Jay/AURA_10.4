@@ -1,0 +1,52 @@
+{
+    "ETHUSDm": {
+        "window_size": 30,
+        "learning_rate": 0.00021,
+        "ent_coef": 0.012,
+        "active_strategies": [
+            "MTF FVG Sweep",
+            "HTF Trend Alignment",
+            "LTF Order Block"
+        ]
+    },
+    "BTCUSDm": {
+        "window_size": 20,
+        "learning_rate": 0.00074,
+        "ent_coef": 0.012,
+        "active_strategies": [
+            "MTF FVG Sweep",
+            "HTF Trend Alignment",
+            "LTF Order Block"
+        ]
+    },
+    "GBPJPYm": {
+        "window_size": 60,
+        "learning_rate": 0.00084,
+        "ent_coef": 0.012,
+        "active_strategies": [
+            "MTF FVG Sweep",
+            "HTF Trend Alignment",
+            "LTF Order Block"
+        ]
+    },
+    "XAGUSDm": {
+        "window_size": 40,
+        "learning_rate": 0.00033,
+        "ent_coef": 0.012,
+        "active_strategies": [
+            "MTF FVG Sweep",
+            "HTF Trend Alignment",
+            "LTF Order Block"
+        ]
+    },
+    "XAUUSDm": {
+        "window_size": 20,
+        "learning_rate": 0.00087,
+        "ent_coef": 0.012,
+        "active_strategies": [
+            "MTF FVG Sweep",
+            "HTF Trend Alignment",
+            "LTF Order Block"
+        ]
+    }
+}
