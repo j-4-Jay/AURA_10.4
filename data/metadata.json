@@ -1,272 +1,272 @@
 {
     "BTCUSDm_Daily_201812290000_202604260000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 2676,
         "start_date": "29:12:2018",
         "end_date": "26:04:2026",
-        "time_taken_sec": 0.42,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\BTCUSDm_Daily_201812290000_202604260000.parquet"
+        "time_taken_sec": 0.01,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\BTCUSDm_D.parquet"
     },
     "BTCUSDm_H1_201812290000_202604261700.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 43128,
         "start_date": "29:12:2018",
         "end_date": "26:04:2026 17:00:00",
         "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\BTCUSDm_H1_201812290000_202604261700.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\BTCUSDm_H1.parquet"
     },
     "BTCUSDm_H4_201812290000_202604261600.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 11473,
         "start_date": "29:12:2018",
         "end_date": "26:04:2026 16:00:00",
         "time_taken_sec": 0.02,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\BTCUSDm_H4_201812290000_202604261600.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\BTCUSDm_H4.parquet"
     },
     "BTCUSDm_M15_202306141545_202604261715.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 100501,
         "start_date": "14:06:2023 15:45:00",
         "end_date": "26:04:2026 17:15:00",
-        "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\BTCUSDm_M15_202306141545_202604261715.parquet"
+        "time_taken_sec": 0.05,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\BTCUSDm_M15.parquet"
     },
     "BTCUSDm_M1_202602160612_202604261726.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 100010,
         "start_date": "16:02:2026 06:12:00",
         "end_date": "26:04:2026 17:26:00",
-        "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\BTCUSDm_M1_202602160612_202604261726.parquet"
+        "time_taken_sec": 0.27,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\BTCUSDm_M1.parquet"
     },
     "ETHUSDm_Daily_201812200000_202604260000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 2676,
         "start_date": "20:12:2018",
         "end_date": "26:04:2026",
-        "time_taken_sec": 0.01,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\ETHUSDm_Daily_201812200000_202604260000.parquet"
+        "time_taken_sec": 0.02,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\ETHUSDm_D.parquet"
     },
     "ETHUSDm_H1_201812200000_202604261700.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 43128,
         "start_date": "20:12:2018",
         "end_date": "26:04:2026 17:00:00",
-        "time_taken_sec": 0.02,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\ETHUSDm_H1_201812200000_202604261700.parquet"
+        "time_taken_sec": 0.03,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\ETHUSDm_H1.parquet"
     },
     "ETHUSDm_H4_201812200000_202604261600.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 11473,
         "start_date": "20:12:2018",
         "end_date": "26:04:2026 16:00:00",
-        "time_taken_sec": 0.01,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\ETHUSDm_H4_201812200000_202604261600.parquet"
+        "time_taken_sec": 0.02,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\ETHUSDm_H4.parquet"
     },
     "ETHUSDm_M15_202306142000_202604261715.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 100484,
         "start_date": "14:06:2023 20:00:00",
         "end_date": "26:04:2026 17:15:00",
-        "time_taken_sec": 0.04,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\ETHUSDm_M15_202306142000_202604261715.parquet"
+        "time_taken_sec": 0.05,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\ETHUSDm_M15.parquet"
     },
     "ETHUSDm_M1_202602160612_202604261718.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 100002,
         "start_date": "16:02:2026 06:12:00",
         "end_date": "26:04:2026 17:18:00",
-        "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\ETHUSDm_M1_202602160612_202604261718.parquet"
+        "time_taken_sec": 0.04,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\ETHUSDm_M1.parquet"
     },
     "EURUSDm_Daily_201807030000_202604240000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 2438,
         "start_date": "03:07:2018",
         "end_date": "24:04:2026",
         "time_taken_sec": 0.01,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\EURUSDm_Daily_201807030000_202604240000.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\EURUSDm_D.parquet"
     },
     "EURUSDm_H1_201807030000_202604242000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 30917,
         "start_date": "03:07:2018",
         "end_date": "24:04:2026 20:00:00",
         "time_taken_sec": 0.02,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\EURUSDm_H1_201807030000_202604242000.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\EURUSDm_H1.parquet"
     },
     "EURUSDm_H4_201807030000_202604242000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 8691,
         "start_date": "03:07:2018",
         "end_date": "24:04:2026 20:00:00",
         "time_taken_sec": 0.02,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\EURUSDm_H4_201807030000_202604242000.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\EURUSDm_H4.parquet"
     },
     "EURUSDm_M15_202204142300_202604242045.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 100306,
         "start_date": "14:04:2022 23:00:00",
         "end_date": "24:04:2026 20:45:00",
-        "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\EURUSDm_M15_202204142300_202604242045.parquet"
+        "time_taken_sec": 0.04,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\EURUSDm_M15.parquet"
     },
     "EURUSDm_M1_202601190723_202604242058.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 100000,
         "start_date": "19:01:2026 07:23:00",
         "end_date": "24:04:2026 20:58:00",
-        "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\EURUSDm_M1_202601190723_202604242058.parquet"
+        "time_taken_sec": 0.04,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\EURUSDm_M1.parquet"
     },
     "GBPJPYm_Daily_201807030000_202604240000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 2438,
         "start_date": "03:07:2018",
         "end_date": "24:04:2026",
         "time_taken_sec": 0.01,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\GBPJPYm_Daily_201807030000_202604240000.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\GBPJPYm_D.parquet"
     },
     "GBPJPYm_H1_201807030000_202604242000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 30916,
         "start_date": "03:07:2018",
         "end_date": "24:04:2026 20:00:00",
         "time_taken_sec": 0.02,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\GBPJPYm_H1_201807030000_202604242000.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\GBPJPYm_H1.parquet"
     },
     "GBPJPYm_H4_201807030000_202604242000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 8691,
         "start_date": "03:07:2018",
         "end_date": "24:04:2026 20:00:00",
-        "time_taken_sec": 0.01,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\GBPJPYm_H4_201807030000_202604242000.parquet"
+        "time_taken_sec": 0.02,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\GBPJPYm_H4.parquet"
     },
     "GBPJPYm_M15_202204192230_202604242045.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 100000,
         "start_date": "19:04:2022 22:30:00",
         "end_date": "24:04:2026 20:45:00",
-        "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\GBPJPYm_M15_202204192230_202604242045.parquet"
+        "time_taken_sec": 0.04,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\GBPJPYm_M15.parquet"
     },
     "GBPJPYm_M1_202601190115_202604242058.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:10",
         "rows": 100000,
         "start_date": "19:01:2026 01:15:00",
         "end_date": "24:04:2026 20:58:00",
-        "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\GBPJPYm_M1_202601190115_202604242058.parquet"
+        "time_taken_sec": 0.04,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\GBPJPYm_M1.parquet"
     },
     "XAGUSDm_Daily_201806280000_202604240000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 2430,
         "start_date": "28:06:2018",
         "end_date": "24:04:2026",
         "time_taken_sec": 0.01,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAGUSDm_Daily_201806280000_202604240000.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAGUSDm_D.parquet"
     },
     "XAGUSDm_H1_201806280000_202604242000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 29369,
         "start_date": "28:06:2018",
         "end_date": "24:04:2026 20:00:00",
         "time_taken_sec": 0.02,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAGUSDm_H1_201806280000_202604242000.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAGUSDm_H1.parquet"
     },
     "XAGUSDm_H4_201806280000_202604242000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 8636,
         "start_date": "28:06:2018",
         "end_date": "24:04:2026 20:00:00",
-        "time_taken_sec": 0.01,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAGUSDm_H4_201806280000_202604242000.parquet"
+        "time_taken_sec": 0.02,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAGUSDm_H4.parquet"
     },
     "XAGUSDm_M15_202201280530_202604242045.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 100000,
         "start_date": "28:01:2022 05:30:00",
         "end_date": "24:04:2026 20:45:00",
-        "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAGUSDm_M15_202201280530_202604242045.parquet"
+        "time_taken_sec": 0.04,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAGUSDm_M15.parquet"
     },
     "XAGUSDm_M1_202601122026_202604242057.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 100000,
         "start_date": "12:01:2026 20:26:00",
         "end_date": "24:04:2026 20:57:00",
-        "time_taken_sec": 0.03,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAGUSDm_M1_202601122026_202604242057.parquet"
+        "time_taken_sec": 0.04,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAGUSDm_M1.parquet"
     },
     "XAUUSDm_Daily_201806280000_202604240000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 2430,
         "start_date": "28:06:2018",
         "end_date": "24:04:2026",
         "time_taken_sec": 0.01,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAUUSDm_Daily_201806280000_202604240000.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAUUSDm_D.parquet"
     },
     "XAUUSDm_H1_201806280000_202604242000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 29376,
         "start_date": "28:06:2018",
         "end_date": "24:04:2026 20:00:00",
         "time_taken_sec": 0.02,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAUUSDm_H1_201806280000_202604242000.parquet"
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAUUSDm_H1.parquet"
     },
     "XAUUSDm_H4_201806280000_202604242000.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 8636,
         "start_date": "28:06:2018",
         "end_date": "24:04:2026 20:00:00",
-        "time_taken_sec": 0.01,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAUUSDm_H4_201806280000_202604242000.parquet"
+        "time_taken_sec": 0.02,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAUUSDm_H4.parquet"
     },
     "XAUUSDm_M15_202201281230_202604242045.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 100000,
         "start_date": "28:01:2022 12:30:00",
         "end_date": "24:04:2026 20:45:00",
-        "time_taken_sec": 0.04,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAUUSDm_M15_202201281230_202604242045.parquet"
+        "time_taken_sec": 0.06,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAUUSDm_M15.parquet"
     },
     "XAUUSDm_M1_202601130143_202604242057.csv": {
         "status": "success",
-        "last_run": "28:04:2026 06:25:23",
+        "last_run": "02:05:2026 16:48:11",
         "rows": 100000,
         "start_date": "13:01:2026 01:43:00",
         "end_date": "24:04:2026 20:57:00",
-        "time_taken_sec": 0.04,
-        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_MT5 RL Trading\\data\\parquet_capsules\\XAUUSDm_M1_202601130143_202604242057.parquet"
+        "time_taken_sec": 0.05,
+        "parquet_path": "C:\\Users\\JAY\\Documents\\AURA (MT5 Trading)\\AURA_10.4\\data\\parquet_capsules\\XAUUSDm_M1.parquet"
     }
 }

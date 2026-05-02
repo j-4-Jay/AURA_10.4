@@ -1,0 +1,24 @@
+{
+    "symbol": "ETHUSDm",
+    "global_risk": {
+        "max_drawdown_pct": 5.0,
+        "daily_loss_limit_usd": 1000
+    },
+    "strategies": {
+        "mtf_fvg_sweep": {
+            "enabled": true,
+            "magic_number": 1001,
+            "risk_pct": 1.0
+        },
+        "htf_trend_alignment": {
+            "enabled": true,
+            "magic_number": 1002,
+            "risk_pct": 1.5
+        },
+        "ltf_order_block": {
+            "enabled": false,
+            "magic_number": 1003,
+            "risk_pct": 0.5
+        }
+    }
+}

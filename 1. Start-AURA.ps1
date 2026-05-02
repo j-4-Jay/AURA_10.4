@@ -9,6 +9,28 @@ Write-Host "==================================================" -ForegroundColor
 Write-Host "             AURA IGNITION SEQUENCE" -ForegroundColor Magenta
 Write-Host "==================================================" -ForegroundColor Magenta
 
+Write-Host "`n[*] Running Pre-Flight Port Sweep (Ghost Buster)..." -ForegroundColor Cyan
+
+# Define the ports AURA needs (8000 for Backend, 3000 for Frontend)
+$PortsToClear = @(8000, 3000)
+
+foreach ($port in $PortsToClear) {
+    # Find any process using this port (handles both IPv4 and IPv6 overlaps safely)
+    $connections = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue
+    if ($connections) {
+        $pids = $connections | Select-Object -ExpandProperty OwningProcess -Unique
+        foreach ($pidToKill in $pids) {
+            if ($pidToKill -ne 0 -and $pidToKill -ne 4) { # Safely ignore core Windows system processes
+                Write-Host "    [!] Port $port is locked by Ghost Process (PID: $pidToKill). Terminating..." -ForegroundColor Yellow
+                Stop-Process -Id $pidToKill -Force -ErrorAction SilentlyContinue
+            }
+        }
+        Write-Host "    [OK] Port $port is now clear." -ForegroundColor Green
+    } else {
+        Write-Host "    [OK] Port $port is already clear." -ForegroundColor Green
+    }
+}
+
 Write-Host "`n[*] Activating Virtual Environment..." -ForegroundColor Cyan
 if (Test-Path "$BasePath\.venv\Scripts\Activate.ps1") {
     . "$BasePath\.venv\Scripts\Activate.ps1"
@@ -94,4 +116,4 @@ Write-Host "`n[*] Starting MT5 Sync Daemon..." -ForegroundColor Cyan
 Start-Process pythonw -ArgumentList "scripts\mt5_sync_daemon.py" -WorkingDirectory $BasePath
 
 Write-Host "`n[*] Engaging Boot Commander...`n" -ForegroundColor Cyan
-python "1. Start-AURA.py"
+python "scripts\1. Start-AURA.py"

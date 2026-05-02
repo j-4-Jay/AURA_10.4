@@ -1,5 +1,10 @@
 import sys
 import asyncio
+from pathlib import Path
+
+# THE FIX: Inject the root AURA directory into sys.path so it can find the 'backend' folder
+BASE_DIR = str(Path(__file__).parent.parent.resolve())
+sys.path.insert(0, BASE_DIR)
 
 # [AURA-STRICT-PROTOCOL] Force the Event Loop BEFORE Uvicorn starts
 if sys.platform == 'win32':

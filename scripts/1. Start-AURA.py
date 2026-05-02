@@ -5,18 +5,21 @@ import threading
 import time
 import signal
 import webbrowser
+from pathlib import Path
 from colorama import init, Fore, Style
 
 # [AURA-STRICT-PROTOCOL] Single Boot Orchestrator (Single Browser Edition)
 init(autoreset=True)
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# THE FIX: Point BASE_DIR one level up to the root AURA_10.4 directory
+BASE_DIR = str(Path(__file__).parent.parent.resolve())
 VENV_PYTHON = sys.executable  # Automatically uses the active .venv python
 
 # Define the subsystems
 SYSTEMS = {
     "BACKEND": {
-        "command": [VENV_PYTHON, "run_backend.py"],
+        # THE FIX: run_backend.py is now explicitly called from the scripts folder
+        "command": [VENV_PYTHON, os.path.join(BASE_DIR, "scripts", "run_backend.py")],
         "color": Fore.GREEN,
         "port": 8000,
         "process": None
